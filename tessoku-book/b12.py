@@ -12,3 +12,4 @@ while l <= r:
     else:
         l = index + 0.001
 print(l)
+　
