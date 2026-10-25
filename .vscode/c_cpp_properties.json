@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "Mac GCC",
+      "compilerPath": "/opt/homebrew/bin/g++",
+      "cStandard": "c17",
+      "cppStandard": "gnu++17"
+    }
+  ],
+  "version": 4
+}
