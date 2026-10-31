@@ -1,0 +1,54 @@
+{
+  "ikneg Python template": {
+    "scope": "python",
+    "prefix": "tenpura",
+    "body": [
+      "# ------------------------------------------------",
+      "#   _ _",
+      "#  (_) |",
+      "#   _| | ___ __   ___  __ _",
+      "#  | | |/ / '_ \\\\ / _ \\\\/ _` |",
+      "#  | |   <| | | |  __/ (_| |",
+      "#  |_|_|\\\\_\\\\_| |_|\\\\___|\\\\__, |",
+      "#                      __/ |",
+      "#                     |___|",
+      "# source by https://github.com/ikneg/ikneg_lib",
+      "# 15yo",
+      "# ------------------------------------------------",
+      "import sys",
+      "",
+      "input = sys.stdin.readline",
+      "def I(): return input().strip()",
+      "def MS(): return input().split()",
+      "def MI(): return map(int, input().split())",
+      "def LMI(): return list(map(int, input().split()))",
+      "",
+      "abcUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'",
+      "abcLower = 'abcdefghijklmnopqrstuvwxyz'",
+      "# ------------------------------------------------",
+      "# ここまでがてんぷら",
+      "# ------------------------------------------------",
+      "",
+      "",
+      "$0"
+    ],
+    "description": "iknegの競プロ用Pythonテンプレート"
+  },
+  "Binary search": {
+    "scope": "python",
+    "prefix": "bsearch",
+    "body": [
+      "def binary_search(ok, ng, check):",
+      "    while abs(ok - ng) > 1:",
+      "        mid = (ok + ng) // 2",
+      "        if check(mid):",
+      "            ok = mid",
+      "        else:",
+      "            ng = mid",
+      "    return ok",
+      "",
+      "$0"
+    ],
+    "description": "整数のめぐる式二分探索。ok: 成立側、ng: 不成立側、check: 単調な判定関数"
+  }
+}
